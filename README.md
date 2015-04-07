@@ -16,3 +16,6 @@ Working through examples with Donna and Thomas
 
 ### Documentation and Examples from other people
 * [DataTables](http://shiny.rstudio.com/articles/) library documentation
+
+### Posts
+* [Function Landscape]() in Google Groups
