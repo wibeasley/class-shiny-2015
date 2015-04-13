@@ -12,11 +12,14 @@ shinyServer(function(input, output) {
   #  2) Its output type is a plot
 
   output$distPlot <- renderPlot({
-    x    <- faithful[, 2]  # Old Faithful Geyser data
-    bins <- seq(min(x), max(x), length.out = input$bins + 1)
+    x <- faithful$waiting  # Old Faithful Geyser data
+    if( is.null(x) ) stop("The desired variable to graph was not found.")
+    
+    # bin_breaks <- seq(from=min(x), to=max(x), length.out = input$bin_count + 1)
+    bin_breaks <- seq(from=min(x), to=max(x), by=input$bin_width)
 
     # draw the histogram with the specified number of bins
     #hist(x, breaks = bins, col = 'darkgray', border = 'white')
-    qplot(x, breaks = bins)
+    qplot(x, breaks=bin_breaks)
   })
 })
