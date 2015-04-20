@@ -3,7 +3,7 @@ library(shiny)
 # ui.R
 
 shinyUI(fluidPage(
-  titlePanel("My Shiny App"),
+  titlePanel("Lesson 2"),
   sidebarLayout(
     sidebarPanel(),
     mainPanel(
@@ -18,7 +18,9 @@ shinyUI(fluidPage(
       br(),
       p("span does the same thing as div, but it works with",
         span("groups of words", style = "color:purple"),
-        "that appear inside a paragraph.")
+        "that appear inside a paragraph."),
+      br(),
+      htmlOutput(outputId='diagnostic_info')
     )
   )
 ))
