@@ -1,19 +1,17 @@
 library(shiny)
 
-shinyUI
-(fluidPage
-  (
+shinyUI(fluidPage(
   titlePanel("Weather Forecast"),
-  sidebarLayout
-    (
-      sidebarPanel
-      (
-        h2(em("7 Day",style="color:blue")),
-        h3(strong("100 % Guarantee",style="color:red"))
-      ),
-                        
-    mainPanel
-    (
+  sidebarLayout (
+    sidebarPanel(
+      width = 2,
+      h2(em("7 Day",style="color:blue")),
+      h3(strong("100 % Guarantee",style="color:red")),
+      img(src="Spain.png",height=100,width=100)
+    ), #close sidebarPanel
+    
+    mainPanel(
+      width = 10,
       h1("The rain",style="font-family: 'Helvetica'"),
       img(src="39.png",height=100,width=100),
       h2("In Spain", style="color:red"),
@@ -24,8 +22,7 @@ shinyUI
       h1("But",span(strong("everywhere",style="color:orange"))),
       br(),
       h2("In",span(strong("Oklahoma!!!",style="color:red")))
-      
-    )
-  )
-))
-
+    
+    ) #mainPanel
+  ) #sidebarLayout
+)) #shinyUI & fluidPage
