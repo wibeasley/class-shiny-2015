@@ -1,4 +1,4 @@
-# Lesson 4 Display Reactive Output
+# Lesson 3 My Turn
 
 shinyUI(fluidPage(
   titlePanel("censusVis"),
@@ -13,9 +13,6 @@ shinyUI(fluidPage(
       label = "Range of Interest:",
       min = 0, max = 100, value = c(0, 100))
   ),
-  mainPanel(
-    textOutput("text1"),
-    textOutput("rangeval")
-    )
+  mainPanel()
   )
 ))

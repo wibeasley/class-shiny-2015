@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 shinyServer(
   function(input, output) {
   output$text1 <- renderText({
@@ -9,3 +10,7 @@ shinyServer(
   })
 }
 )
+=======
+shinyServer(function(input, output) {
+})
+>>>>>>> origin/master
