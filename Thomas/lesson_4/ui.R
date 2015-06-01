@@ -22,15 +22,15 @@ shinyUI(fluidPage(
                   selected = "Oklahoma"),
       
       
-      sliderInput("range", 
+      sliderInput("sld_range", 
                   label = "Range of interest:",
                   min = 0, max = 100, value = c(0, 100))
       ),
     
     mainPanel(
-      textOutput("text1"),
-      textOutput("text2"),
-      textOutput("text3")
+      textOutput("text1a"),
+      textOutput("text2a"),
+      textOutput("lbl_range")
     )
   )
 ))
