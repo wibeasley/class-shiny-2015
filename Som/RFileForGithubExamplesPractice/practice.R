@@ -13,3 +13,11 @@ if (value < 5){
   
 }
 
+mat <- NULL
+for (i in 1:3){
+  for (j in 1:4){
+    cbinding <- cbind(i,j)
+    mat <- rbind(mat, cbinding)
+  }
+}
+
