@@ -21,3 +21,10 @@ for (i in 1:3){
   }
 }
 
+x = 5
+
+while(x < 10){
+  print(x)
+  x = x + 1
+}
+
