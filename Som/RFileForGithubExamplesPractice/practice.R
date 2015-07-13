@@ -21,7 +21,7 @@ for (i in 1:3){
   }
 }
 
-x = 5
+x = 5   # setting a test value
 
 while(x < 10){
   print(x)
