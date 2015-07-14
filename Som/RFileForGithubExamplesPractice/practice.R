@@ -13,7 +13,7 @@ if (value < 5){
   
 }
 
-mat <- NULL   # This NULL
+mat <- NULL   # This is empty object
 for (i in 1:3){
   for (j in 1:4){
     cbinding <- cbind(i,j)
