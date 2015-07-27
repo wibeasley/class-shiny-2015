@@ -30,4 +30,6 @@ while(x < 10){
 
 y <- rnorm(10)
 
+print(y)
+
 
