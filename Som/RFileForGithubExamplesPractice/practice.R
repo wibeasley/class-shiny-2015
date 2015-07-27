@@ -28,8 +28,6 @@ while(x < 10){
   x = x + 1
 }
 
-y <- rnorm(10)
-
 print(y)
 
 
