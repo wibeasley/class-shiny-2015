@@ -14,12 +14,9 @@ ui <- dashboardPage(
     tabItems(
       tabItem(tabName = "dashboard",
         fluidRow( 
-          box(plotOutput("plot1", height = 250)),
-      
-          box(
-            title = "Controls",
-            sliderInput("slider", "Number of obervations:",1,100,50)
-      )
+            box(title = "Controls",
+            sliderInput("slider", "Number of obervations:",1,100,50)),
+            box(plotOutput("plot1", height = 250))
     )
   ),
   
