@@ -1,6 +1,6 @@
 ## app.R ##
 library(shinydashboard)
-
+  ## Header Content
 ui <- dashboardPage(
   dashboardHeader(title = "Basic dashboard"),
   ## Sidebar content
