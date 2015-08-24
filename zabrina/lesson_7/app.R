@@ -2,7 +2,7 @@
 library(shinydashboard)
   ## Header Content
 ui <- dashboardPage(
-  dashboardHeader(title = "Basic dashboard"),
+  dashboardHeader(title = "My Dashboard"),
   ## Sidebar content
   dashboardSidebar(
     sidebarMenu(
