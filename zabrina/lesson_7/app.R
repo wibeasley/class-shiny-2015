@@ -1,6 +1,6 @@
 ## app.R ##
 library(shinydashboard)
-  ## Header Content
+## Header Content
 ui <- dashboardPage(
   dashboardHeader(title = "My Dashboard"),
   ## Sidebar content
@@ -34,6 +34,7 @@ ui <- dashboardPage(
 )
 server <- function(input, output) {
   set.seed(122)
+  
   histdata <- rnorm(500)
   
   output$plot1 <- renderPlot({
@@ -43,4 +44,3 @@ server <- function(input, output) {
 }
 
 shinyApp(ui, server)
-
